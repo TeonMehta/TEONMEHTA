@@ -6,12 +6,22 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
              app: './src/index.js',
-             work: './src/work.js'
+             work: './src/work.js',
+            about:'./src/about.js',
+            contact:'./src/contact.js',
    },
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    resolve: {
+        alias: {
+
+        },
+        extensions: ['.js', '.jsx', '.css']
+    },
+
+
     module: {
              rules: [
            {
@@ -54,6 +64,18 @@ module.exports = {
             hash: true,
             template: './src/work.html',
             filename: 'work.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/about.html',
+            filename: 'about.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/contact.html',
+            filename: 'contact.html'
         }),
     ]
 };
