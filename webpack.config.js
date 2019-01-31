@@ -5,10 +5,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-             app: './src/index.js',
-             work: './src/work.js',
-            about:'./src/about.js',
-            contact:'./src/contact.js',
+             app: './src/js/index.js',
+             work: './src/js/work.js',
+            about:'./src/js/about.js',
+            contact:'./src/js/contact.js',
    },
     output: {
         filename: '[name].bundle.js',
@@ -56,25 +56,25 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/index.html',
+            template: './src/templates/index.html',
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/work.html',
+            template: './src/templates/work.html',
             filename: 'work.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/about.html',
+            template: './src/templates/about.html',
             filename: 'about.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/contact.html',
+            template: './src/templates/contact.html',
             filename: 'contact.html'
         }),
     ]
