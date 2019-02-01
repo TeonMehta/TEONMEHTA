@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Teon Mehta. A mad scientist. A developer. Learning & growing in the software & tech. Find out more about how you can get in touch & work together.">
+
+    <!--EXTERNAL STYLE COMPONENTS-->
+    <link rel="icon" type="image/png" href="./icons8-fraud-480.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--JS IMPORTS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <title>Contact || Teon Mehta</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+        <div class="logo">
+            <a href="index.html">TEON MEHTA</a>
+        </div>
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="work.html">Work</a></li>
+
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fas fa-address-card"></i>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="contact-text">
+    <h1>CONTACT</h1>
+    <p>Based in Montreal, Canada.</p>
+    <br>
+    <p>Montreal H9B 2J1</p>
+    <p>+1 (514) - 803 - 7407</p>
+    <p>—</p>
+</div>
+<div class="thankyou">
+    <h1>Thank you</h1>
+</div>
+<form method="post" id="contactForm" action="/contact">
+    <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" class="form-control"  name="name" id="Name" minlength="2" placeholder="Your Name...">
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="Email">Email Address *</label>
+        <input type="email" class="form-control" id="Email"  name="email" aria-describedby="emailHelp" placeholder="Your Email..." >
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea class="form-control" id="Message"  name="message" rows="3" placeholder="Your Message..." required></textarea>
+    </div>
+    <div class="button">
+        <button type="submit" name="submit" id="submit" class="btn btn-dark btn-lg">Submit</button>
+    </div>
+</form>
+
+
+
+
+<script src="./contact.bundle.js"></script>
+</body>
+</html>
