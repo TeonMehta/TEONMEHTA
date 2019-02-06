@@ -20,8 +20,6 @@ module.exports = {
         },
         extensions: ['.js', '.jsx', '.css']
     },
-
-
     module: {
              rules: [
            {

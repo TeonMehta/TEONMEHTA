@@ -19,7 +19,6 @@ $(document).ready(function() {
             },
             message: {
                 required: true,
-                digits: true
             }
         },
         submitHandler: function(form) {
@@ -36,8 +35,8 @@ $(document).ready(function() {
                     message:MESSAGE
                 },
                 success:function () {
-                    $("form").fadeOut(1000);
-                    $(".thankyou").fadeIn(1500).css('display','block');
+                    $("form").fadeOut(500);
+                    $(".thankyou").fadeIn(2000).css('display','block');
 
                 }
             });
