@@ -8,9 +8,33 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100vh;
+    background-color: white;
 }
 
+%OPACITY{
+    opacity: 0;
+    animation: opacity 2s ease-in forwards ;
+    animation-duration:1s;
+    animation-delay: 10s;
+}
 
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+//@keyframes background-change {
+//    0%{
+//        background-color: white;
+//    }
+//    100% {
+//        background-color: #1b1b1b;
+//    }
+//}
 
 //################################################  NAV   ##################################################################
 
@@ -19,6 +43,7 @@ nav{
     margin-bottom: 10%;
     font-family: ff-tisa-sans-web-pro, sans-serif;
 
+    @extend %OPACITY;
 
     ul{
         text-align: right;
@@ -37,16 +62,16 @@ nav{
             a{
                 display: inline-block;
                 outline: none;
-                color: rgba(0,0,0,.38);
+                //color: rgba(0,0,0,.38);
+                color: #1b1b1b;
                 text-transform: uppercase;
                 text-decoration: none!important;
                 font-size: 12px;
                 letter-spacing: 1.2px;
-                font-weight: 600 ;
+                font-weight: 400 ;
             }
             a:hover{
-                color: #1b1b1b;
-                text-decoration: line-through!important;
+                color: #999999;
             }
         }
     }
@@ -57,17 +82,21 @@ nav{
 .logo{
     float: left;
     text-align: left;
-    padding: 8px;
+    padding: 10px;
     //margin-left: 16px;
+    @extend %OPACITY;
 
     margin-top: 8px;
     a{
         color: #000;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 400;
         font-size: 12px;
         text-decoration: none;
 
+    }
+    a:hover{
+        font-weight: bold;
     }
 }
 
@@ -204,5 +233,63 @@ nav{
         margin-top: 4px;
     }
 }
+//################################################  BODY    ####################################################
 
-//################################################     ####################################################
+.TYPEIT{
+    width: 100%;
+    height: 100vh;
+    p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin: 0 auto;
+        font-size: 3em;
+    }
+
+
+
+}
+
+
+//################################################  FO0TER    ####################################################
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:10%;
+    margin: 0 auto;
+    @extend %OPACITY;
+    .social{
+        text-align: center;
+        li{
+            text-decoration: none;
+            display: inline;
+            padding-bottom: 30px;
+            padding-left: 0;
+            padding-right: 15px;
+
+            a{
+                color: #1b1b1b;
+            }
+            a:hover{
+                color: #999999;
+            }
+        }
+
+    }
+
+    .text{
+        text-align: center;
+        font-size: .7em;
+        font-style: normal;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #1b1b1b;
+
+    }
+    .text:hover{
+        font-weight: 500;
+    }
+}
+
+
