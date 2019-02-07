@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Teon Mehta. A developer. Learning & growing in the software & tech. We can connect, collaborate, or chill.">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAADYAAAAgAAAAAAAAAB4AAAAzAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABZAAAAywAAABwAAACyAAAAdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAP8AAABMAAAA2AAAAJIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAD9AAAAXgAAAPEAAAB5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2gAAAJAAAAD/AAAASQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANMAAADsAAAA/wAAAB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxAAAA/wAAAP8AAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOAAAA/gAAAP8AAAD/AAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjgAAAP8AAAD/AAAAygAAAKEAAAAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8AAAD7AAAA9gAAAM4AAAD/AAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChAAAA5wAAAOgAAADdAAAA5gAAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWwAAAMoAAAD6AAAAygAAAJ0AAAApAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAB3AAAA8QAAAJgAAABGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAB0AAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwAAAIUAAACWAAAApAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAACAAAAA9wAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8R8AAPAfAAD4PwAA+D8AAPw/AAD8PwAA+D8AAPg/AAD4HwAA+B8AAPgfAAD4HwAA+D8AAPw/AAD4fwAA+H8AAA==" rel="icon" type="image/x-icon">
+
+    <!--EXTERNAL STYLE COMPONENTS-->
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="https://use.typekit.net/tbs3jam.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--JS IMPORTS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <title>Contact || Teon Mehta</title>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+        <div class="logo">
+            <a href="index.html">TEON MEHTA</a>
+        </div>
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="contact-text">
+    <h1>CONTACT</h1>
+    <p>Based in Montreal, Canada.</p>
+    <br>
+    <p>Montreal H9B 2J1</p>
+    <p>+1 (514) - 803 - 7407</p>
+    <p>—</p>
+</div>
+<div class="thankyou">
+    <p>Hey! Thanks for checking out my site. We'll connect, collaborate, or chill.</p>
+</div>
+<form method="post" id="contactForm" action="/contact">
+    <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" class="form-control"  name="name" id="Name" minlength="2" placeholder="Your Name...">
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="Email">Email Address *</label>
+        <input type="email" class="form-control" id="Email"  name="email" aria-describedby="emailHelp" placeholder="Your Email..." >
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea class="form-control" id="Message"  name="message" rows="3" placeholder="Your Message..." required></textarea>
+    </div>
+    <div class="button">
+        <button type="submit" name="submit" id="submit" class="button">Submit</button>
+    </div>
+</form>
+
+
+<footer>
+    <div class="social">
+        <ul>
+            <li><a href="https://www.facebook.com/teon.thirrteen" target="_blank"><i class="fab fa-facebook"></i></a></li>  <!-- <i class="fas fa-file"></i>-->
+            <li><a href="https://www.linkedin.com/in/teon-mehta-19536b135" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/TeonMehta" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+    <div class="text">
+        <p>© Teon Mehta 2019 | Powered by yours truly | tel. +1 514 803 7407 | TeonMehta@gmail.com</p>
+    </div>
+</footer>
+
+<script src="./contact.bundle.js"></script>
+</body>
+</html>

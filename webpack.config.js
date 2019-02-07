@@ -20,8 +20,6 @@ module.exports = {
         },
         extensions: ['.js', '.jsx', '.css']
     },
-
-
     module: {
              rules: [
            {
@@ -44,6 +42,7 @@ module.exports = {
    },
     devServer: {
              contentBase: './dist',
+            writeToDisk: true
    },
     plugins: [
         new CleanWebpackPlugin(['dist']),
