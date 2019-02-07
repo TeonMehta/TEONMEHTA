@@ -3,8 +3,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const server = express(), DIST_DIR = __dirname,
-    CONTACT_FILE = path.join(DIST_DIR, 'dist/contact.html');
-const port = 9090;
+    CONTACT = path.join(DIST_DIR, 'dist/contact.html'),
+    HOME = path.join(DIST_DIR, 'dist/index.html'),
+    ABOUT = path.join(DIST_DIR, 'dist/about.html'),
+    WORK = path.join(DIST_DIR, 'dist/work.html');
+
+const port = 80;
 
 
 
@@ -16,8 +20,23 @@ server.use(bodyParser.urlencoded({ extended: false }));
 server.use(bodyParser.json());
 
 // MAIN PAGE
+server.get('/', (req, res) => {
+    res.sendFile(HOME)
+});
+
+// WORK PAGE
+server.get('/work', (req, res) => {
+    res.sendFile(WORK)
+});
+// ABOUT PAGE
+server.get('/about', (req, res) => {
+    res.sendFile(ABOUT)
+});
+
+
+// CONTACT PAGE
 server.get('/contact', (req, res) => {
-    res.sendFile(CONTACT_FILE)
+    res.sendFile(CONTACT)
 });
 
 server.post('/contact', (req, res) => {
