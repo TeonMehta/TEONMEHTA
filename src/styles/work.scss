@@ -250,6 +250,9 @@ nav{
 
     .IMAGE {
       @extend %ODD_IMAGE;
+      background-image: url("../SHIFT.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
 
     .DETAILS {
@@ -278,7 +281,10 @@ nav{
     @extend %PROJECT_LINK;
 
     .IMAGE {
-      @extend %EVEN_IMAGE
+      @extend %EVEN_IMAGE;
+      background-image: url("../AXCESS.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
 
     .DETAILS {
@@ -519,6 +525,134 @@ footer{
   .text:hover{
     font-weight: 500;
   }
+}
+
+//################################################  MOBILE    ####################################################
+
+
+@media only screen and (max-width: 600px) {
+
+  .PROJECT {
+
+
+    .PROJECT_LINK {
+
+      .IMAGE {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 1/10;
+      }
+
+      .DETAILS {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 10/13;
+        .INNER_DETAILS{
+
+
+          .DETAIL_TITLE{
+
+          }
+          .DETAIL_DATE{
+
+          }
+        }
+
+      }
+    }
+  }
+
+  .PROJECT_TWO {
+
+
+    .PROJECT_LINK {
+
+      .IMAGE {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 1/10;
+      }
+
+      .DETAILS {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 10/13;
+        .INNER_DETAILS{
+
+
+          .DETAIL_TITLE{
+
+          }
+          .DETAIL_DATE{
+
+          }
+        }
+
+      }
+    }
+  }
+
+  .PROJECT_THREE {
+
+
+    .PROJECT_LINK {
+
+      .IMAGE {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 1/10;
+      }
+
+      .DETAILS {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 10/13;
+        .INNER_DETAILS{
+
+
+          .DETAIL_TITLE{
+
+          }
+          .DETAIL_DATE{
+
+          }
+        }
+
+      }
+    }
+  }
+
+  .PROJECT_FOUR {
+
+
+    .PROJECT_LINK {
+
+      .IMAGE {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 1/10;
+      }
+
+      .DETAILS {
+        width: 100%;
+        grid-column: 1/21;
+        grid-row: 10/13;
+        .INNER_DETAILS{
+
+
+          .DETAIL_TITLE{
+
+          }
+          .DETAIL_DATE{
+
+          }
+        }
+
+      }
+    }
+  }
+
+
 }
 
 

@@ -5,7 +5,7 @@ import TypeIt from 'typeit';
 
 
 new TypeIt('#billion', {
-    speed: 60,
+    speed: 40,
     breakLines: false,
     waitUntilVisible: true
 })
