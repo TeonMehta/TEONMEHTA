@@ -315,7 +315,7 @@ nav{
       @extend %ODD_IMAGE;
       background-image: url("../ns.png");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 105% 105%;
     }
 
     .DETAILS {
