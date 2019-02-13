@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4fbb8c1d-f255-4793-9afc-51e8d90835b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/work.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/about.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="205">
+              <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -29,8 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="-403">
               <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/contact.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="255" column="22" lean-forward="true" selection-start-line="255" selection-start-column="22" selection-end-line="255" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -44,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/work.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="118">
@@ -118,10 +127,10 @@
         <option value="$PROJECT_DIR$/src/js/index.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/src/templates/contact.html" />
-        <option value="$PROJECT_DIR$/src/templates/about.html" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
         <option value="$PROJECT_DIR$/src/styles/work.scss" />
         <option value="$PROJECT_DIR$/src/templates/work.html" />
+        <option value="$PROJECT_DIR$/src/templates/about.html" />
       </list>
     </option>
   </component>
@@ -142,6 +151,17 @@
             <path>
               <item name="TEONMEHTA" type="b2602c69:ProjectViewProjectNode" />
               <item name="TEONMEHTA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TEONMEHTA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEONMEHTA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TEONMEHTA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEONMEHTA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,7 +213,7 @@
       <workItem from="1549500039650" duration="2525000" />
       <workItem from="1549517491614" duration="1418000" />
       <workItem from="1549564847786" duration="2081000" />
-      <workItem from="1549927668861" duration="2942000" />
+      <workItem from="1549927668861" duration="3412000" />
     </task>
     <task id="LOCAL-00001" summary="multiple entry / output webpack">
       <created>1548431979819</created>
@@ -272,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550014081727</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING&#10;&#10;axcess link">
+      <created>1550034213568</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550034213568</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101707000" />
+    <option name="totallyTimeSpent" value="102177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,7 +375,8 @@
     <MESSAGE value="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING" />
     <MESSAGE value="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING&#10;&#10;NS LOGO&#10;url fix" />
     <MESSAGE value="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING&#10;&#10;NS LOGO REAL FIX" />
-    <option name="LAST_COMMIT_MESSAGE" value="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING&#10;&#10;NS LOGO REAL FIX" />
+    <MESSAGE value="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING&#10;&#10;axcess link" />
+    <option name="LAST_COMMIT_MESSAGE" value="+RESUME LINK {GOOGLE DRIVE}&#10;+TESTING&#10;&#10;axcess link" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -406,13 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/contact.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="320" column="2" selection-start-line="320" selection-start-column="2" selection-end-line="320" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AXCESS.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -438,13 +459,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bwmtlsign.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -459,20 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/work.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1586">
@@ -484,6 +484,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="255" column="22" lean-forward="true" selection-start-line="255" selection-start-column="22" selection-end-line="255" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
         </state>
       </provider>
     </entry>
