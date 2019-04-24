@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Teon</title>
+</head>
+<body>
+<h1>Teon Mehta</h1>
+<h3>THESE ARE THE SMART CONTACTS</h3>
+
+<% smartcontacts.forEach(function (contact) { %>
+    <h2><%=contact.name %></h2>
+    <li>Instagram:<%=contact.instagram %></li>
+    <li>Twitter:<%=contact.twitter %></li>
+    <li>Facebook:<%=contact.facebook %></li>
+    <br>
+<% }); %>
+
+<a href="/contacts/new">ADD NEW SMART CONTACT</a>
+<script type="text/javascript" src="app.bundle.js?780b85ff9202e7d08422"></script><script type="text/javascript" src="work.bundle.js?780b85ff9202e7d08422"></script><script type="text/javascript" src="about.bundle.js?780b85ff9202e7d08422"></script><script type="text/javascript" src="contact.bundle.js?780b85ff9202e7d08422"></script></body>
+</html>

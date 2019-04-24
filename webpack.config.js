@@ -1,49 +1,57 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-             app: './src/js/index.js',
-             work: './src/js/work.js',
-            about:'./src/js/about.js',
-            contact:'./src/js/contact.js',
-   },
+        app: './src/js/index.js',
+        work: './src/js/work.js',
+        about: './src/js/about.js',
+        contact: './src/js/contact.js',
+    },
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        alias: {
-
-        },
+        alias: {},
         extensions: ['.js', '.jsx', '.css']
     },
     module: {
-             rules: [
-           {
-               test: /\.scss$/,
-               use: [
-                   // fallback to style-loader in development
-                   process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
-                   "css-loader",
-                   "sass-loader"
-               ]
-       },
-                 {
-                 test: /\.(png|svg|jpg|gif|otf)$/,
-                 use: [
-                   'file-loader'
-                 ]
+        rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                    // fallback to style-loader in development
+                    process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader"
+                ]
             },
+            {
+                test: /\.(png|svg|jpg|gif|otf)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
+                test: /\.ejs$/,
+                loader: 'ejs-loader',
+                query: {
+                    variable: 'contacts',
+                    interpolate : '\\{\\{(.+?)\\}\\}',
+                    evaluate : '\\[\\[(.+?)\\]\\]'
+                }
+            }
+        ],
 
-     ]
-   },
+    },
     devServer: {
-             contentBase: './dist',
-            writeToDisk: true
-   },
+        contentBase: './dist',
+        writeToDisk: true
+    },
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new MiniCssExtractPlugin({
@@ -52,29 +60,44 @@ module.exports = {
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
+        new webpack.ProvidePlugin({
+            _: "underscore"
+        }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/templates/index.html',
+            template: './src/views/index.html',
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/templates/work.html',
+            template: './src/views/work.html',
             filename: 'work.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/templates/about.html',
+            template: './src/views/about.html',
             filename: 'about.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/templates/contact.html',
+            template: './src/views/contact.html',
             filename: 'contact.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            hash: true,
+            template: './src/views/text.ejs',
+            filename: 'text.ejs'
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            hash: true,
+            template: './src/views/new-contact.ejs',
+            filename: 'new-contact.ejs'
         }),
     ]
 };
