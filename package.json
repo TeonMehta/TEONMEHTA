@@ -9,7 +9,7 @@
     "body-parser": "^1.18.3",
     "bootstrap": "^4.2.1",
     "express": "^4.16.4",
-    "jquery-validation": "^1.19.0",
+    "jquery-validation": "^1.19.3",
     "lodash": "^4.17.11",
     "typeit": "^6.0.2",
     "webpack-cli": "^3.2.1"
